@@ -1,0 +1,60 @@
+name: ClashBoard
+options:
+  bundleIdPrefix: com.adam.clash.board
+  deploymentTarget:
+    iOS: "26.0"
+  developmentLanguage: zh-Hans
+
+settings:
+  SWIFT_VERSION: "5.9"
+  MARKETING_VERSION: "0.2.0"
+  CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  ClashBoard:
+    type: application
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - ClashBoard
+    resources:
+      - ClashBoard/Resources
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.adam.clash.board
+      INFOPLIST_FILE: ClashBoard/Info.plist
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      SWIFT_VERSION: "5.9"
+      DEVELOPMENT_TEAM: ""
+    scheme:
+      testTargets:
+        - ClashBoardTests
+      gatherCoverageData: true
+
+  ClashBoardTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - ClashBoard/Tests/UnitTests
+    dependencies:
+      - target: ClashBoard
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.adam.clash.board.tests
+
+schemes:
+  ClashBoard:
+    build:
+      targets:
+        ClashBoard: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - ClashBoardTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

@@ -1,0 +1,99 @@
+/* MerlinClash - Chinese (Simplified) */
+
+/* Common */
+"common.loading" = "加载中...";
+"common.retry" = "重试";
+"common.save" = "保存";
+"common.cancel" = "取消";
+"common.delete" = "删除";
+"common.edit" = "编辑";
+"common.close" = "关闭";
+"common.confirm" = "确认";
+"common.error" = "错误";
+"common.success" = "成功";
+"common.search" = "搜索";
+
+/* Tabs */
+"tab.overview" = "概览";
+"tab.proxy" = "代理";
+"tab.connection" = "连接";
+"tab.rule" = "规则";
+"tab.log" = "日志";
+"tab.settings" = "设置";
+
+/* Overview */
+"overview.speed" = "实时速度";
+"overview.upload" = "上传";
+"overview.download" = "下载";
+"overview.traffic" = "流量统计";
+"overview.connections" = "活跃连接";
+"overview.memory" = "内存使用";
+"overview.quickActions" = "快速操作";
+"overview.testLatency" = "延迟测速";
+"overview.closeAll" = "关闭连接";
+"overview.refresh" = "刷新配置";
+
+/* Proxy */
+"proxy.title" = "代理";
+"proxy.search" = "搜索节点";
+"proxy.noProxy" = "没有代理节点";
+"proxy.checkConfig" = "请检查后端配置是否正确";
+"proxy.testLatency" = "测试延迟";
+"proxy.timeout" = "超时";
+
+/* Connection */
+"connection.title" = "连接";
+"connection.noConnection" = "没有活跃连接";
+"connection.noConnectionDesc" = "当前没有活跃的网络连接";
+"connection.detail" = "连接详情";
+"connection.basicInfo" = "基本信息";
+"connection.address" = "地址信息";
+"connection.traffic" = "流量统计";
+"connection.chain" = "代理链路";
+"connection.sortBySpeed" = "按速度排序";
+"connection.sortByTraffic" = "按流量排序";
+"connection.sortByTime" = "按时间排序";
+"connection.sortByHost" = "按主机排序";
+
+/* Rule */
+"rule.title" = "规则";
+"rule.noRule" = "没有规则";
+"rule.checkConfig" = "请检查后端配置";
+
+/* Log */
+"log.title" = "日志";
+"log.noLog" = "没有日志";
+"log.waiting" = "等待日志数据...";
+"log.search" = "搜索日志";
+"log.debug" = "调试";
+"log.info" = "信息";
+"log.warning" = "警告";
+"log.error" = "错误";
+
+/* Settings */
+"settings.title" = "设置";
+"settings.backend" = "后端";
+"settings.backendManagement" = "后端管理";
+"settings.appearance" = "外观";
+"settings.theme" = "主题";
+"settings.themeSystem" = "跟随系统";
+"settings.themeLight" = "浅色";
+"settings.themeDark" = "深色";
+"settings.about" = "关于";
+"settings.version" = "版本";
+"settings.build" = "构建";
+
+/* Backend */
+"backend.title" = "后端管理";
+"backend.add" = "添加后端";
+"backend.edit" = "编辑后端";
+"backend.name" = "名称";
+"backend.host" = "主机地址";
+"backend.port" = "端口";
+"backend.protocol" = "协议";
+"backend.secret" = "Secret（可选）";
+"backend.test" = "测试连接";
+"backend.testSuccess" = "连接成功";
+"backend.testFailed" = "连接失败";
+"backend.auth" = "认证";
+"backend.basicInfo" = "基本信息";

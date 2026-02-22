@@ -1,0 +1,99 @@
+/* MerlinClash - English */
+
+/* Common */
+"common.loading" = "Loading...";
+"common.retry" = "Retry";
+"common.save" = "Save";
+"common.cancel" = "Cancel";
+"common.delete" = "Delete";
+"common.edit" = "Edit";
+"common.close" = "Close";
+"common.confirm" = "Confirm";
+"common.error" = "Error";
+"common.success" = "Success";
+"common.search" = "Search";
+
+/* Tabs */
+"tab.overview" = "Overview";
+"tab.proxy" = "Proxies";
+"tab.connection" = "Connections";
+"tab.rule" = "Rules";
+"tab.log" = "Logs";
+"tab.settings" = "Settings";
+
+/* Overview */
+"overview.speed" = "Real-time Speed";
+"overview.upload" = "Upload";
+"overview.download" = "Download";
+"overview.traffic" = "Traffic Statistics";
+"overview.connections" = "Active Connections";
+"overview.memory" = "Memory Usage";
+"overview.quickActions" = "Quick Actions";
+"overview.testLatency" = "Test Latency";
+"overview.closeAll" = "Close All";
+"overview.refresh" = "Refresh Config";
+
+/* Proxy */
+"proxy.title" = "Proxies";
+"proxy.search" = "Search proxy";
+"proxy.noProxy" = "No Proxies";
+"proxy.checkConfig" = "Please check backend configuration";
+"proxy.testLatency" = "Test Latency";
+"proxy.timeout" = "Timeout";
+
+/* Connection */
+"connection.title" = "Connections";
+"connection.noConnection" = "No Active Connections";
+"connection.noConnectionDesc" = "There are no active network connections";
+"connection.detail" = "Connection Detail";
+"connection.basicInfo" = "Basic Info";
+"connection.address" = "Address Info";
+"connection.traffic" = "Traffic Statistics";
+"connection.chain" = "Proxy Chain";
+"connection.sortBySpeed" = "Sort by Speed";
+"connection.sortByTraffic" = "Sort by Traffic";
+"connection.sortByTime" = "Sort by Time";
+"connection.sortByHost" = "Sort by Host";
+
+/* Rule */
+"rule.title" = "Rules";
+"rule.noRule" = "No Rules";
+"rule.checkConfig" = "Please check backend configuration";
+
+/* Log */
+"log.title" = "Logs";
+"log.noLog" = "No Logs";
+"log.waiting" = "Waiting for log data...";
+"log.search" = "Search logs";
+"log.debug" = "Debug";
+"log.info" = "Info";
+"log.warning" = "Warning";
+"log.error" = "Error";
+
+/* Settings */
+"settings.title" = "Settings";
+"settings.backend" = "Backend";
+"settings.backendManagement" = "Backend Management";
+"settings.appearance" = "Appearance";
+"settings.theme" = "Theme";
+"settings.themeSystem" = "System";
+"settings.themeLight" = "Light";
+"settings.themeDark" = "Dark";
+"settings.about" = "About";
+"settings.version" = "Version";
+"settings.build" = "Build";
+
+/* Backend */
+"backend.title" = "Backend Management";
+"backend.add" = "Add Backend";
+"backend.edit" = "Edit Backend";
+"backend.name" = "Name";
+"backend.host" = "Host";
+"backend.port" = "Port";
+"backend.protocol" = "Protocol";
+"backend.secret" = "Secret (Optional)";
+"backend.test" = "Test Connection";
+"backend.testSuccess" = "Connection Successful";
+"backend.testFailed" = "Connection Failed";
+"backend.auth" = "Authentication";
+"backend.basicInfo" = "Basic Info";
