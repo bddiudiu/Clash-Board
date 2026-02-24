@@ -14,7 +14,7 @@ struct SettingsView: View {
 
     var body: some View {
         List {
-            clashConfigSection
+            mihomoConfigSection
             portInfoSection
             proxySettingsSection
             appearanceSection
@@ -36,9 +36,9 @@ struct SettingsView: View {
         }
     }
 
-    // MARK: - Clash 配置
+    // MARK: - Mihomo 配置
 
-    private var clashConfigSection: some View {
+    private var mihomoConfigSection: some View {
         Section {
             // 运行模式
             HStack {
@@ -102,9 +102,9 @@ struct SettingsView: View {
                 Label("DNS 增强", systemImage: "server.rack")
             }
         } header: {
-            Text("Clash 配置")
+            Text("Mihomo 配置")
         } footer: {
-            Text("修改会立即同步到 Clash 内核")
+            Text("修改会立即同步到 Mihomo 内核")
         }
     }
 

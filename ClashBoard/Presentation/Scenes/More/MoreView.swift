@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MoreView: View {
     @EnvironmentObject private var coordinator: AppCoordinator
-    @State private var clashVersion: String = ""
+    @State private var kernelVersion: String = ""
 
     var body: some View {
         ScrollView {
@@ -47,10 +47,10 @@ struct MoreView: View {
                             .font(.caption)
                             .foregroundColor(.secondary)
                     }
-                    if !clashVersion.isEmpty {
+                    if !kernelVersion.isEmpty {
                         Text("·")
                             .foregroundColor(.secondary)
-                        Text(clashVersion)
+                        Text(kernelVersion)
                             .font(.caption)
                             .foregroundColor(.secondary)
                     }
@@ -183,7 +183,7 @@ struct MoreView: View {
         if let data = try? await apiClient.requestRaw(.getVersion),
            let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
            let ver = json["version"] as? String {
-            await MainActor.run { clashVersion = ver }
+            await MainActor.run { kernelVersion = ver }
         }
     }
 

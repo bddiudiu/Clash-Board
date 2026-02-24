@@ -96,7 +96,7 @@ final class BackendRepository: BackendRepositoryProtocol {
         }
 
         // 临时配置 API 客户端
-        let tempClient = ClashAPIClient()
+        let tempClient = MihomoAPIClient()
         tempClient.configure(baseURL: baseURL, secret: backend.secret)
 
         // 测试连接

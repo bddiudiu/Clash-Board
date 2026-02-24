@@ -25,7 +25,7 @@ final class DIContainer {
 
     private func registerNetworkServices() {
         // API Client
-        let apiClient = ClashAPIClient()
+        let apiClient = MihomoAPIClient()
         register(apiClient, for: APIClientProtocol.self)
 
         // WebSocket Manager

@@ -116,3 +116,6 @@ final class ClashAPIClient: APIClientProtocol {
         return request
     }
 }
+
+// Mihomo exposes a Clash-compatible control API. Keep a Mihomo-first alias.
+typealias MihomoAPIClient = ClashAPIClient

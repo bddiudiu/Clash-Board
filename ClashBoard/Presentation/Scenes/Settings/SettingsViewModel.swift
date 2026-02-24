@@ -10,7 +10,7 @@ import Combine
 
 final class SettingsViewModel: ObservableObject {
 
-    // MARK: - Published Properties (Clash Config)
+    // MARK: - Published Properties (Mihomo Config)
 
     @Published var mode: ClashMode = .rule
     @Published var allowLan: Bool = false

@@ -106,6 +106,11 @@ enum ClashMode: String, Codable, CaseIterable {
     }
 }
 
+// MARK: - Mihomo Compatibility Aliases
+
+typealias MihomoConfig = ClashConfig
+typealias MihomoMode = ClashMode
+
 struct TunConfig: Codable, Equatable {
     var enable: Bool
     var stack: String

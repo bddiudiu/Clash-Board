@@ -7,7 +7,7 @@
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-5.0-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-iOS native Clash proxy dashboard, inspired by [zashboard](https://github.com/zashboard/zashboard)
+iOS native Mihomo proxy dashboard (Clash-compatible API), inspired by [zashboard](https://github.com/zashboard/zashboard)
 
 </div>
 
@@ -20,9 +20,9 @@ iOS native Clash proxy dashboard, inspired by [zashboard](https://github.com/zas
 - **Connections** - Live connection list with speed calculation, swipe to close
 - **Rules** - View and manage routing rules
 - **Logs** - Real-time log stream with level filtering and search
-- **Settings** - Live Clash config sync (mode, allow-lan, IPv6, TUN, DNS, log-level)
+- **Settings** - Live Mihomo config sync (mode, allow-lan, IPv6, TUN, DNS, log-level)
 - **DNS Query** - Domain resolution testing
-- **Multi-backend** - Manage multiple Clash backends
+- **Multi-backend** - Manage multiple Mihomo backends
 - **Dark Mode** - System / Light / Dark theme
 
 ## Project Structure
@@ -49,7 +49,7 @@ ClashBoard/
 │       ├── Proxy/             # Proxy groups & nodes
 │       ├── Connection/        # Connection list
 │       ├── More/              # Hub: rules, logs, DNS, providers
-│       ├── Settings/          # Clash config & preferences
+│       ├── Settings/          # Mihomo config & preferences
 │       ├── Backend/           # Backend management
 │       ├── Rule/              # Rule list
 │       └── Log/               # Log viewer
@@ -80,7 +80,7 @@ Select a simulator or device, then `Cmd + R` to run.
 
 ### First Launch
 
-1. Add a Clash backend (host, port, secret)
+1. Add a Mihomo backend (host, port, secret)
 2. Tap "Test Connection" to verify
 3. Save — you're in
 
@@ -103,4 +103,4 @@ MIT - see [LICENSE](LICENSE)
 ## Acknowledgments
 
 - [zashboard](https://github.com/zashboard/zashboard)
-- [Clash](https://github.com/Dreamacro/clash)
+- [Mihomo](https://github.com/MetaCubeX/mihomo)
