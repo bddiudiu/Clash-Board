@@ -145,7 +145,7 @@ final class ProxyListViewModel: ObservableObject {
                 type: ProxyGroupType(rawValue: proxyData.type) ?? .selector,
                 now: proxyData.now,
                 all: all,
-                proxies: proxies
+                proxies: sortProxiesByLatency(proxies)
             )
             groups.append(group)
         }
@@ -161,7 +161,7 @@ final class ProxyListViewModel: ObservableObject {
                     id: oldProxy.id,
                     name: oldProxy.name,
                     type: oldProxy.type,
-                    latency: delay
+                    latency: delay.flatMap { $0 > 0 ? $0 : nil }
                 )
                 var updatedProxies = proxyGroups[groupIndex].proxies
                 updatedProxies[proxyIndex] = updatedProxy
@@ -171,9 +171,28 @@ final class ProxyListViewModel: ObservableObject {
                     type: group.type,
                     now: group.now,
                     all: group.all,
-                    proxies: updatedProxies
+                    proxies: sortProxiesByLatency(updatedProxies)
                 )
             }
+        }
+    }
+
+    private func sortProxiesByLatency(_ proxies: [Proxy]) -> [Proxy] {
+        proxies.sorted { lhs, rhs in
+            switch (lhs.latency, rhs.latency) {
+            case let (left?, right?):
+                if left != right {
+                    return left < right
+                }
+            case (.some, .none):
+                return true
+            case (.none, .some):
+                return false
+            case (.none, .none):
+                break
+            }
+
+            return lhs.name.localizedCaseInsensitiveCompare(rhs.name) == .orderedAscending
         }
     }
 }
